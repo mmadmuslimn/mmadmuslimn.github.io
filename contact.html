@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mamad Personal Website</title>
+  <link rel="ICON" href="images/icon.png">
+
+</head>
+<body>
+
+<style>
+
+
+ body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+        background-image: url('images/bgcolor.jpg'); }
+
+.contactme-logo {
+      	width: 100%;
+    	display: block;  }
+
+  .navbar {
+	background-color: #0b5394; 
+	display: flex;
+	padding: 5px;
+	justify-content: space-between; }	
+
+  .left-menu {
+	padding-left: 30px;
+	display: flex;
+	align-items: center; }
+
+  .home-button {
+   	background-color: #073763;
+	color: white;
+	padding: 8px 30px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 8px; }
+
+  .home-button:hover {
+   	background-color: #000000;
+	color: #f1c232;
+	opacity: 0.4; }
+
+  .menu a.contact-button {
+	color: #f1c232;
+   	background-color: #000000;
+	padding: 8px 30px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 8px; }
+
+  .menu {
+        display: flex;
+	list-style-type: none; }
+
+  .menu li a {
+      	color: #ffffff;
+     	font-weight: bold;
+      	padding: 10px 30px;
+      	text-decoration: none;
+     	transition: background-color 0.3s ease; }
+
+  .menu li a:hover {
+      	background-color: #000000;
+	color: #ffe599;
+      	border-radius: 8px;
+	opacity: 0.4; }
+
+.contactContainer {
+    	display: flex;
+    	gap: 20px;
+    	padding: 20px;
+    	max-width: 1200px;
+    	margin: 50px auto; }
+
+.contactColumn {
+  	text-align: center;
+   	padding: 20px;
+    	border-radius: 10px;
+    	background: linear-gradient(to bottom right, #ffffff, #f9f9f9);
+    	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+  .left, .right {
+    	flex: 1;
+        background-color: #f9f9f9;
+    	padding: 20px;
+    	border-radius: 10px;
+    	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+.contactColumn h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #333; }
+
+.contact-list {
+    list-style: none;
+    padding: 0; }
+
+.contact-list li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; }
+
+.contact-list a {
+    color: #608BC1;
+    text-decoration: none;
+    transition: color 0.3s ease; }
+
+.contact-list a:hover {
+    color: #d4ac0d; }
+
+
+  table {
+    	width: 80%;
+    	margin: 0 auto;
+    	border-collapse: collapse; }
+
+  td {
+    	text-align: left;
+    	padding: 8px 12px; 
+    	vertical-align: top;     
+	line-height: 1.6; }
+
+  tr:nth-child(odd) {
+    	background-color: #fff2cc; }
+
+
+  form {
+	text-align: left;
+      	display: flex;
+      	flex-direction: column;
+      	gap: 1px; }
+
+
+input, textarea {
+      width: 97%;
+      padding: 10px;
+     border: 1px solid #CCC;
+      border-radius: 5px; }
+
+input[type="submit"] {
+      width: 100%;
+      background-color: #608BC1;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease; }
+
+input[type="submit"]:hover {
+      background-color: #d4ac0d; }
+
+  .map {
+	margin-top: 30px; }	
+
+
+
+    	
+  footer {
+        background-color: #073763;
+        color: white;
+        text-align: center;
+        padding: 1px; }
+
+</style>
+
+
+<div class="headingName">
+               <img src="images/contactmelogo.png" alt="Contact Me" class="contactme-logo">
+</div>
+
+<nav class="navbar">
+    <div class="left-menu">
+        <a href="index.html" class="home-button">HOME</a>
+    </div>
+    <div class="right-menu">
+        <ul class="menu">
+                <li><a href="profile.html">PROFILE</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+        	<li><a href="career.html">CAREER</a></li>
+        	<li><a href="interest.html">INTEREST</a></li>
+        	<li><a href="contact.html" class="contact-button">CONTACT ME</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="contactContainer">
+
+    <div class="contactColumn left">
+        <h3>Contact Me</h3>
+        <form action="about:blank" method="post">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="contactColumn right">
+        <h3>GET IN TOUCH</h3>
+        <ul class="contact-list">
+<table>
+    <tr>
+        <td><strong>Whatsapp:</strong></td>
+        <td><a href="https://wa.me/+60138700610">013-8700610</li>
+</td>
+    </tr>
+    <tr>
+        <td><strong>Email:</strong></td>
+        <td><a href="mailto:2023674252@student.uitm.edu.my"> 2023674252@student.uitm.edu.my</a></td>
+    </tr>
+ <tr>
+        <td><strong>LinkedIn:</strong></td>
+        <td><a href="https://linkedin.com/in/muhammadia" target="_blank"> linkedin.com/in/muhammadia</a></td>
+    </tr>
+ <tr>
+        <td><strong>Location:</strong></td>
+        <td>Selangor, Malaysia</td>
+    </tr>
+
+</table>
+
+<div class="map">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10679.108853796924!2d101.6124635829479!3d3.1745400935044974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc48b48b1f1a51%3A0x22cea984fb3fa38e!2sFlora%20Damansara%2C%2047820%20Petaling%20Jaya%2C%20Selangor!5e0!3m2!1sms!2smy!4v1733844730623!5m2!1sms!2smy"
+        width="62%" 
+        height="250" 
+        style="border:0;"">
+    </iframe>
+</div>
+
+
+
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>This website for study purposes. IMS458 <br> Best Browser: Google Chrome. Best view on any displays <br>Contact Via: 
+        <a href="mailto:2023674252@student.uitm.edu.my">2023674252@student.uitm.edu.my</a><br> © All rights reserved.&copy; </p>
+</footer>
+
+</body>
+</html>

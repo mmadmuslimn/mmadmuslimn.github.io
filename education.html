@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mamad Personal Website</title>
+  <link rel="ICON" href="images/icon.png">
+
+</head>
+<body>
+<style>
+
+  body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+        background-image: url('images/bgcolor.jpg'); }
+
+.edu-logo {
+      	width: 100%;
+    	display: block;  }
+
+  .navbar {
+	background-color: #0b5394; 
+	display: flex;
+	padding: 5px;
+	justify-content: space-between; }	
+
+  .left-menu {
+	padding-left: 30px;
+	display: flex;
+	align-items: center; }
+
+  .home-button {
+   	background-color: #073763;
+	color: white;
+	padding: 8px 30px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 8px; }
+
+  .home-button:hover {
+   	background-color: #000000;
+	color: #f1c232;
+	opacity: 0.4; }
+
+  .menu a.edu-button {
+	color: #f1c232;
+   	background-color: #000000;
+	padding: 8px 30px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 8px; }
+
+  .menu {
+        display: flex;
+	list-style-type: none; }
+
+  .menu li a {
+      	color: #ffffff;
+     	font-weight: bold;
+      	padding: 10px 30px;
+      	text-decoration: none;
+     	transition: background-color 0.3s ease; }
+
+  .menu li a:hover {
+      	background-color: #000000;
+	color: #ffe599;
+      	border-radius: 8px;
+	opacity: 0.4; }
+
+  .education {
+    	display: flex;
+    	gap: 20px;
+	margin: 50px 200px;
+    	background-color: #f9f9f9;
+    	border-radius: 10px;
+    	padding: 20px;
+    	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+  .education-logo {
+    	width: 100px;
+    	height: auto;
+    	object-fit: contain; }
+
+  .education-description h3 {
+    	margin-bottom: 10px;
+    	font-size: 18px;
+    	color: #333; }
+
+  .education-description p {
+    	font-size: 14px;
+	color: #555;
+	font-weight: bold;
+    	margin-bottom: 10px; }
+
+.education ul { 
+    	line-height: 1.6;    
+    	margin-bottom: 20px;   
+ 	font-size: 16px; 
+    	color: #333; }
+
+  footer {
+        background-color: #073763;
+        color: white;
+        text-align: center;
+        padding: 1px; }
+
+
+
+</style>
+
+
+
+
+
+    <div class="headingName">
+ <img src="images/education.png" alt="education" class="edu-logo">
+    </div>
+
+    <nav class="navbar">
+        <div class="left-menu">
+            <a href="index.html" class="home-button">HOME</a>
+        </div>
+        <div class="right-menu">
+            <ul class="menu">
+                <li><a href="profile.html">PROFILE</a></li>
+                <li><a href="education.html" class="edu-button">EDUCATION</a></li>
+        	<li><a href="career.html">CAREER</a></li>
+        	<li><a href="interest.html">INTEREST</a></li>
+        	<li><a href="contact.html">CONTACT ME</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="education-content">
+        <div class="education">
+            <img src="images/uitm.jpg" alt="UITM Logo" class="education-logo">
+            <div class="education-description">
+                <h3>UITM - BACHELOR OF INFORMATION SCIENCE (HONOURS) INFORMATION SYSTEMS MANAGEMENT</h3>
+                <p>2023 - Ongoing</p>
+                <ul>
+                    <li>Database Fundamentals: Introduction to database design, implementation, and management using tools like Microsoft Access.</li>
+                    <li>Webpage Development: Basics of creating static and dynamic webpages using HTML and CSS.</li>
+                    <li>Programming Basics: Learned foundational coding concepts in Java and Python, emphasizing problem-solving and logic building.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Kolej Vocational Tawau Section -->
+        <div class="education">
+            <img src="images/kvt.png" alt="Kolej Vocational Tawau Logo" class="education-logo">
+            <div class="education-description">
+
+                <h3>KOLEJ VOCATIONAL TAWAU - COMPUTER SYSTEM AND NETWORKING</h3>
+                <p>2012 - 2017</p>
+
+                <ul>
+                    <li>Networking Fundamentals: Learned concepts of LAN/WAN, IP addressing, subnetting, and network security.</li>
+                    <li>Operating Systems: Gained proficiency in configuring and troubleshooting Windows and Linux-based systems.</li>
+		    <li>Hardware and Software Maintenance: Acquired skills in assembling, repairing, and maintaining computer systems and peripherals.</li>
+		    <li>Cisco Networking Academy: Participated in Cisco certification programs to deepen networking knowledge.</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- SMK Kinabutan Section -->
+        <div class="education">
+            <img src="images/smkkinabutan.png" alt="SMK Kinabutan Logo" class="education-logo">
+            <div class="education-description">
+                <h3>SMK KINABUTAN TAWAU</h3>
+                <p>2010 - 2012</p>
+            </div>
+        </div>
+
+        <!-- SK Kampung Titingan Section -->
+        <div class="education">
+            <img src="images/sktitingan.jpeg" alt="SK Kampung Titingan Logo" class="education-logo">
+            <div class="education-description">
+                <h3>SK KAMPUNG TITINGAN TAWAU</h3>
+                <p>2004 - 2009</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>This website for study purpose for code. IMS458 <br> Best Browser: Google Chrome. Best view on any displays <br>Contact Via: <a href="mailto:2023674252@student.uitm.edu.my">2023674252@student.uitm.edu.my</a><br>© All rights reserved.</p>
+    </footer>
+</body>
+</html>
